@@ -48,12 +48,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="{{url('single')}}">
                             Nohay
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="{{url('All_Noha_Khawan')}}">
                            Noha Khawan's
                         </a>
                     </li>
