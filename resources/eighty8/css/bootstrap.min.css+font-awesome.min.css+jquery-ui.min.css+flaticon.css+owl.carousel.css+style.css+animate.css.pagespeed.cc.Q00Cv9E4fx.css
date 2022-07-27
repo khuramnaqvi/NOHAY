@@ -306,7 +306,7 @@ ul {
 	height: 4px;
 	left: 0;
 	bottom: 0;
-	background: #ffe400;
+	background: #ff0000;
 	z-index: 2;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
@@ -338,7 +338,7 @@ ul {
 	min-width: 146px;
 	padding: 9px 10px;
 	border-radius: 5px;
-	background: #ffe400;
+	background: #ff0000;
 	cursor: pointer;
 }
 
@@ -354,8 +354,8 @@ ul {
 
 .site-btn.sb-line {
 	background: transparent;
-	border: 2px solid #ffe400;
-	color: #ffe400;
+	border: 2px solid #ff0000;
+	color: #ff0000;
 	padding: 7px 10px;
 }
 
@@ -443,11 +443,11 @@ ul {
 
 .accordion-area .panel-header .panel-link.active {
 	background: transparent;
-	color: #ffe400;
+	color: #ff0000;
 }
 
 .accordion-area .panel-header .panel-link.collapsed {
-	background: #ffe400;
+	background: #ff0000;
 	color: #1b1b1b;
 }
 
@@ -459,7 +459,7 @@ ul {
 .accordion-area .panel-link.active:after {
 	content: "-";
 	margin-top: -10px;
-	color: #ffe400;
+	color: #ff0000;
 }
 
 .accordion-area .panel-link {
@@ -469,12 +469,12 @@ ul {
 	padding: 10px 40px;
 	padding-left: 20px;
 	font-size: 18px;
-	background: #ffe400;
+	background: #ff0000;
 	font-weight: 700;
 	color: #1b1b1b;
 	line-height: 1;
 	cursor: pointer;
-	border: 3px solid #ffe400;
+	border: 3px solid #ff0000;
 	border-radius: 7px;
 }
 
@@ -500,10 +500,10 @@ ul {
 	font-size: 18px;
 	color: #1b1b1b;
 	font-weight: 700;
-	border: 3px solid #ffe400;
+	border: 3px solid #ff0000;
 	padding: 6px 22px;
 	margin-right: 15px;
-	background: #ffe400;
+	background: #ff0000;
 	margin-bottom: 10px;
 }
 
@@ -513,7 +513,7 @@ ul {
 
 .tab-element .nav-tabs .nav-link.active {
 	background: transparent;
-	color: #ffe400;
+	color: #ff0000;
 }
 
 .tab-element .tab-pane p {
@@ -583,7 +583,7 @@ ul {
 
 .icon-boxe i {
 	display: block;
-	color: #ffe400;
+	color: #ff0000;
 	font-size: 65px;
 	margin-bottom: 15px;
 }
@@ -600,7 +600,7 @@ ul {
 .icon-boxe .readmore {
 	font-size: 18px;
 	font-weight: 700;
-	color: #ffe400;
+	color: #ff0000;
 }
 
 /*------------------
@@ -652,7 +652,7 @@ ul {
 }
 
 .main-menu li a:hover {
-	color: #ffe400;
+	color: #ff0000;
 }
 
 .main-menu li.active a {
@@ -666,7 +666,7 @@ ul {
 	height: 4px;
 	left: 0;
 	bottom: -1px;
-	background: #ffe400;
+	background: #ff0000;
 }
 
 .header-social-links {
@@ -736,9 +736,9 @@ ul {
 .hero-slider .owl-nav .owl-prev {
 	width: 56px;
 	height: 56px;
-	border: 1px solid #ffe400;
+	border: 1px solid #ff0000;
 	border-radius: 50%;
-	color: #ffe400;
+	color: #ff0000;
 	text-align: center;
 	display: inline-block;
 	padding-top: 12px;
@@ -758,7 +758,7 @@ ul {
 	display: inline-block;
 	width: 13px;
 	height: 13px;
-	border: 2px solid #ffe400;
+	border: 2px solid #ff0000;
 	border-radius: 50%;
 	margin-right: 9px;
 }
@@ -768,7 +768,7 @@ ul {
 }
 
 .hero-slider .owl-dots .owl-dot.active {
-	background: #ffe400;
+	background: #ff0000;
 }
 
 .hs-item {
@@ -783,7 +783,7 @@ ul {
 
 .hs-item span {
 	font-size: 24px;
-	color: #ffe400;
+	color: #ff0000;
 	font-weight: 500;
 	display: block;
 	margin-bottom: 5px;
@@ -861,7 +861,7 @@ ul {
 	height: 4px;
 	right: 0;
 	bottom: 0;
-	background: #ffe400;
+	background: #ff0000;
 	z-index: 2;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
@@ -930,7 +930,7 @@ ul {
 	position: absolute;
 	top: 0;
 	left: 100%;
-	color: #ffe400;
+	color: #ff0000;
 	font-size: 14px;
 	font-weight: 500;
 	margin-left: 10px;
@@ -991,7 +991,7 @@ ul {
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
 	display: inline-flex;
-	background: #ffe400;
+	background: #ff0000;
 	color: #212121;
 	font-size: 14px;
 	font-weight: 700;
@@ -1023,7 +1023,7 @@ ul {
 	height: 4px;
 	left: 0;
 	bottom: -1px;
-	background: #ffe400;
+	background: #ff0000;
 	z-index: 2;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
@@ -1054,7 +1054,7 @@ ul {
 .ft-blog-widget .bw-content a {
 	font-size: 14px;
 	font-weight: 500;
-	color: #ffe400;
+	color: #ff0000;
 }
 
 .ft-contact-widget p {
@@ -1063,7 +1063,7 @@ ul {
 }
 
 .ft-contact-widget p span {
-	color: #ffe400;
+	color: #ff0000;
 }
 
 .ft-contact-widget .footer-logo {
@@ -1086,7 +1086,7 @@ ul {
 }
 
 .footer-section p a {
-	color: #ffe400;
+	color: #ff0000;
 }
 
 /*------------------
@@ -1175,7 +1175,7 @@ ul {
 
 .service-box .readmore {
 	font-weight: 700;
-	color: #ffe400;
+	color: #ff0000;
 	text-transform: uppercase;
 	font-size: 18px;
 	display: block;
@@ -1227,7 +1227,7 @@ ul {
 	height: 4px;
 	right: 0;
 	bottom: 0;
-	background: #ffe400;
+	background: #ff0000;
 	z-index: 2;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
@@ -1320,7 +1320,7 @@ ul {
 
 .dj-single {
 	position: relative;
-	border-bottom: 4px solid #ffe400;
+	border-bottom: 4px solid #ff0000;
 }
 
 .dj-single:after {
@@ -1341,7 +1341,7 @@ ul {
 }
 
 .dj-single:hover .dj-info-warp {
-	background: #ffe400;
+	background: #ff0000;
 }
 
 .dj-single:hover .dj-info-warp h4,
@@ -1480,7 +1480,7 @@ ul {
 
 .shows-menu.nav-tabs .nav-item .nav-link.active {
 	background-color: transparent;
-	border-bottom: 4px solid #ffe400;
+	border-bottom: 4px solid #ff0000;
 }
 
 .shows-menu.nav-tabs .nav-item .nav-link.active:after {
@@ -1532,7 +1532,7 @@ ul {
 }
 
 .show-info span {
-	background: #ffe400;
+	background: #ff0000;
 	color: #191919;
 	display: inline-block;
 	padding: 8px 10px;
@@ -1564,7 +1564,7 @@ ul {
 	left: 22px;
 	bottom: 22px;
 	display: inline-block;
-	background: #ffe400;
+	background: #ff0000;
 	font-size: 18px;
 	font-weight: 700;
 	padding: 0 5px;
@@ -1583,7 +1583,7 @@ ul {
 	height: 4px;
 	right: 0;
 	bottom: 0;
-	background: #ffe400;
+	background: #ff0000;
 	z-index: 2;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
@@ -1622,7 +1622,7 @@ ul {
 }
 
 .blog-item .blog-content .readmore:hover {
-	color: #ffe400;
+	color: #ff0000;
 }
 
 .pagination-warp {
@@ -1660,12 +1660,12 @@ ul {
 }
 
 .site-pagination a i {
-	color: #ffe400;
+	color: #ff0000;
 }
 
 .site-pagination a.active {
 	background: #191919;
-	border-bottom: 1px solid #ffe400;
+	border-bottom: 1px solid #ff0000;
 }
 
 /*------------------
@@ -1705,7 +1705,7 @@ ul {
 	height: 2px;
 	right: 0;
 	bottom: 0;
-	background: #ffe400;
+	background: #ff0000;
 	z-index: 2;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
@@ -1731,7 +1731,7 @@ ul {
 }
 
 .contact-info p span {
-	color: #ffe400;
+	color: #ff0000;
 }
 
 .map {
