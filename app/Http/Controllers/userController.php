@@ -10,27 +10,43 @@ use Vqhteam\Ytdownload\YTDownload;
 
 class userController extends Controller
 {
+    
+    public function welcome()
+    {
+        $user=User::where('role',1)->paginate(5);
+
+        return view('welcome',compact('user'));
+    }
     public function All_Noha_Khawan()
     {
         $user=User::where('role',1)->paginate(10);
+        $list=nohay::get()->groupBy('year');
 
-        return view('All_Noha_Khawan',compact('user'));
+        return view('All_Noha_Khawan',compact('user','list'));
     }
     public function list_nohay($id = null)
     {
         if($id==null){
-            $list=nohay::get();
+            $list=nohay::get()->groupBy('year');
 
         }
         else{
-            $list=nohay::where('user_id',$id)->get();
+            $list=nohay::where('user_id',$id)->get()->groupBy('year');
         }
-        
+        //dd($list);
         return view('list_nohay',compact('list'));
     }
     public function single($id)
     {
         $list=nohay::find($id);
+        if (nohay::where('id','!=',$id)->where('user_id',  $list->user_id)->where('year',  $list->year)->exists()) {
+            $three=nohay::where('id','!=',$id)->where('user_id',  $list->user_id)->where('year',  $list->year)->take(3)->get();
+            
+   
+        }
+        else{
+            $three=nohay::where('id','!=',$id)->inRandomOrder()->take(3)->get();
+        }
 
 
         $get = YTDownload::getLink($list->url);
@@ -44,7 +60,7 @@ class userController extends Controller
 
         }
         
-        return view('single',compact('list','link'));
+        return view('single',compact('list','link','three'));
     }
     
     

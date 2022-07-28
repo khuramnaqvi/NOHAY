@@ -23,6 +23,18 @@
                     <label for="exampleInputEmail1">Url</label>
                     <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Last Name" name="url">
                   </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Year</label>
+                      <select class="form-control" name="year">
+                         
+                          <option value="2022">2022</option>
+                          <option value="2021">2021</option>
+                          <option value="2020">2020</option>
+                          <option value="2019">2019</option>
+                          <option value="2019">2018</option>
+                          
+                      </select>
+                  </div>
                   
                   
                   
@@ -118,6 +130,18 @@
                                   <div class="form-group">
                                     <label for="exampleInputEmail1">Url</label>
                                     <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Last Name" name="url" value="{{$row->url}}">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Year</label>
+                                      <select class="form-control" name="year">
+                                         
+                                          <option value="2022"  {{ ( $row->year ==2022 ) ? 'selected' : '' }}>2022</option>
+                                          <option value="2021" {{ ( $row->year ==2021 ) ? 'selected' : '' }}>2021</option>
+                                          <option value="2020" {{ ( $row->year ==2020 ) ? 'selected' : '' }}>2020</option>
+                                          <option value="2019" {{ ( $row->year ==2019 ) ? 'selected' : '' }}>2019</option>
+                                          <option value="2019" {{ ( $row->year ==2018 ) ? 'selected' : '' }}>2018</option>
+                                          
+                                      </select>
                                   </div>
                                   
                                   

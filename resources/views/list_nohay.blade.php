@@ -25,21 +25,25 @@
         <div class="tab-content" id="myTabContent">
             <div aria-labelledby="tab-1" class="tab-pane fade show active" id="tab-1" role="tabpanel">
                 <div class="row">
-                    @foreach($list as $row)
+                    @php $k=0; @endphp
+                  
+                    @foreach($list as $key=>$value)
+                    @foreach($value as $row)
+                    @php $k++; @endphp
                     <div class="col-lg-6">
                         <table class="chart-table">
                             <tbody>
                                 
                                 <tr>
                                     <td ><a href="{{url('single/' .$row->id)}}" style="color: white;">
-                                        1</a>
+                                        {{$k}}</a>
                                     </td>
                                     <td><a href="{{url('single/' .$row->id)}}" style="color: white;">
-                                        <img alt="#" src="{{asset('upload/images/'.$row->campanyname->file)}}"></a>
+                                        <img alt="#" src="{{asset('upload/images/'.$row->campanyname->file)}}" style="border-radius: 50%;"></a>
                                     </td>
                                     <td>
                                         <h4 style="color: white;"><a href="{{url('single/' .$row->id)}}" style="color: white;">
-                                           {{$row->tittle}}</a>
+                                           {{$row->tittle}} | {{$row->year}}</a>
                                         </h4>
                                         
                                     </td>
@@ -54,6 +58,7 @@
                             </tbody>
                         </table>
                     </div>
+                    @endforeach
                     @endforeach
                    
                 </div>

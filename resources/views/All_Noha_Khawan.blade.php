@@ -1,5 +1,10 @@
 @extends('layouts.main')
 @section('content')
+
+<style type="text/css">
+   
+    
+</style>
 <section class="page-info-section set-bg" data-setbg="img/page-info-bg.jpg">
     <div class="container">
         <div class="section-title text-center">
@@ -17,12 +22,15 @@
             </p>
         </div>
     </div>
-    <div class="container p-0">
-        <div class="dj-team">
+    <div class="container">
+        <div class="dj-team pl-5 pr-5">
             @foreach($user as $row)
             <div class="col-1-5">
-                <div class="dj-single">
-                    <img alt="" src="{{asset('upload/images/'.$row->file)}}">
+                <div class="dj-single ">
+                        <div style="height: 224px;">
+                            <img alt="" src="{{asset('upload/images/'.$row->file)}}" style="width: 100%;height: 100%; object-fit: contain;">
+                                
+                        </div>
                         <div class="dj-info-warp">
                             <a href="{{url('list_nohay/' .$row->id)}}">
                             <div class="dj-info">
@@ -36,10 +44,7 @@
                                     <i class="fa fa-facebook">
                                     </i>
                                 </a>
-                                <a href="#">
-                                    <i class="fa fa-soundcloud">
-                                    </i>
-                                </a>
+                                
                                 <a href="{{$row->twurl}}">
                                     <i class="fa fa-twitter">
                                     </i>
@@ -81,1041 +86,96 @@
         <div class="tab-content" id="myTabContent">
             <div aria-labelledby="tab-1" class="tab-pane fade show active" id="tab-1" role="tabpanel">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <table class="chart-table">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        1
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/1.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Girls Like You
-                                        </h4>
-                                        <p>
-                                            Maroon 5 Featuring Cardi B
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/2.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            I Like It
-                                        </h4>
-                                        <p>
-                                            Cardi B, Bad Bunny & J Balvin
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        3
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/3.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Better Now
-                                        </h4>
-                                        <p>
-                                            Post Malone
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        4
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/4.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            In My Feelings
-                                        </h4>
-                                        <p>
-                                            Drake
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        5
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/5.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Love Lies
-                                        </h4>
-                                        <p>
-                                            Khalid & Normani
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-lg-6">
-                        <table class="chart-table">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        6
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/6.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Delicate
-                                        </h4>
-                                        <p>
-                                            Taylor Swift
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        7
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/7.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            No Tears Left To Cry
-                                        </h4>
-                                        <p>
-                                            Ariana Grande
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        8
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/8.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Back To You
-                                        </h4>
-                                        <p>
-                                            Selena Gomez
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        9
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/9.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Boo'd Up
-                                        </h4>
-                                        <p>
-                                            Ella Mai
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        10
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/10.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            The Middle
-                                        </h4>
-                                        <p>
-                                            Zedd, Maren Morris & Grey
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    @php $k=0; @endphp
+                    @foreach($list as $key=>$value)
+                    @if($key==2022)
+                        @foreach($value as $row)
+                        @php $k++; @endphp
+                        <div class="col-lg-6">
+                            <table class="chart-table">
+                                <tbody>
+                                    
+                                    <tr>
+                                        <td ><a href="{{url('single/' .$row->id)}}" style="color: white;">
+                                            {{$k}}</a>
+                                        </td>
+                                        <td><a href="{{url('single/' .$row->id)}}" style="color: white;">
+                                            <img alt="#" src="{{asset('upload/images/'.$row->campanyname->file)}}" style="border-radius: 50%;"></a>
+                                        </td>
+                                        <td>
+                                            <h4 style="color: white;"><a href="{{url('single/' .$row->id)}}" style="color: white;">
+                                               {{$row->tittle}}</a>
+                                            </h4>
+                                            
+                                        </td>
+                                        <td>
+                                            <a href="{{url('single/' .$row->id)}}">
+                                                <img alt="" src="{{asset('img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png')}}"/>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                  
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        @endforeach
+                    @endif    
+                    @endforeach
                 </div>
-                <div class="text-center pt-5">
-                    <button class="site-btn">
-                        LOAD MORE
-                    </button>
-                </div>
+                
             </div>
             <div aria-labelledby="tab-2" class="tab-pane fade" id="tab-2" role="tabpanel">
                  <div class="row">
-                    <div class="col-lg-6">
-                        <table class="chart-table">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        1
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/1.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Girls Like You
-                                        </h4>
-                                        <p>
-                                            Maroon 5 Featuring Cardi B
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/2.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            I Like It
-                                        </h4>
-                                        <p>
-                                            Cardi B, Bad Bunny & J Balvin
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        3
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/3.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Better Now
-                                        </h4>
-                                        <p>
-                                            Post Malone
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        4
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/4.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            In My Feelings
-                                        </h4>
-                                        <p>
-                                            Drake
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        5
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/5.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Love Lies
-                                        </h4>
-                                        <p>
-                                            Khalid & Normani
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-lg-6">
-                        <table class="chart-table">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        6
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/6.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Delicate
-                                        </h4>
-                                        <p>
-                                            Taylor Swift
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        7
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/7.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            No Tears Left To Cry
-                                        </h4>
-                                        <p>
-                                            Ariana Grande
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        8
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/8.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Back To You
-                                        </h4>
-                                        <p>
-                                            Selena Gomez
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        9
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/9.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Boo'd Up
-                                        </h4>
-                                        <p>
-                                            Ella Mai
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        10
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/10.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            The Middle
-                                        </h4>
-                                        <p>
-                                            Zedd, Maren Morris & Grey
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    @php $k1=0; @endphp
+                    @foreach($list as $key=>$value)
+                    @if($key==2021)
+                        @foreach($value as $row)
+                        @php $k1++; @endphp
+                        <div class="col-lg-6">
+                            <table class="chart-table">
+                                <tbody>
+                                    
+                                    <tr>
+                                        <td ><a href="{{url('single/' .$row->id)}}" style="color: white;">
+                                            {{$k1}}</a>
+                                        </td>
+                                        <td><a href="{{url('single/' .$row->id)}}" style="color: white;">
+                                            <img alt="#" src="{{asset('upload/images/'.$row->campanyname->file)}}" style="border-radius: 50%;"></a>
+                                        </td>
+                                        <td>
+                                            <h4 style="color: white;"><a href="{{url('single/' .$row->id)}}" style="color: white;">
+                                               {{$row->tittle}}</a>
+                                            </h4>
+                                            
+                                        </td>
+                                        <td>
+                                            <a href="{{url('single/' .$row->id)}}">
+                                                <img alt="" src="{{asset('img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png')}}"/>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                  
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        @endforeach
+                    @endif    
+                    @endforeach
                 </div>
-                <div class="text-center pt-5">
-                    <button class="site-btn">
-                        LOAD MORE
-                    </button>
-                </div>
+                
             </div>
             <div aria-labelledby="tab-3" class="tab-pane fade" id="tab-3" role="tabpanel">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <table class="chart-table">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        1
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/1.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Girls Like You
-                                        </h4>
-                                        <p>
-                                            Maroon 5 Featuring Cardi B
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/2.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            I Like It
-                                        </h4>
-                                        <p>
-                                            Cardi B, Bad Bunny & J Balvin
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        3
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/3.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Better Now
-                                        </h4>
-                                        <p>
-                                            Post Malone
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        4
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/4.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            In My Feelings
-                                        </h4>
-                                        <p>
-                                            Drake
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        5
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/5.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Love Lies
-                                        </h4>
-                                        <p>
-                                            Khalid & Normani
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-lg-6">
-                        <table class="chart-table">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        6
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/6.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Delicate
-                                        </h4>
-                                        <p>
-                                            Taylor Swift
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        7
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/7.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            No Tears Left To Cry
-                                        </h4>
-                                        <p>
-                                            Ariana Grande
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        8
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/8.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Back To You
-                                        </h4>
-                                        <p>
-                                            Selena Gomez
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        9
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/9.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Boo'd Up
-                                        </h4>
-                                        <p>
-                                            Ella Mai
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        10
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/10.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            The Middle
-                                        </h4>
-                                        <p>
-                                            Zedd, Maren Morris & Grey
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+               
             </div>
             <div aria-labelledby="tab-4" class="tab-pane fade" id="tab-4" role="tabpanel">
-                 <div class="row">
-                    <div class="col-lg-6">
-                        <table class="chart-table">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        1
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/1.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Girls Like You
-                                        </h4>
-                                        <p>
-                                            Maroon 5 Featuring Cardi B
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        2
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/2.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            I Like It
-                                        </h4>
-                                        <p>
-                                            Cardi B, Bad Bunny & J Balvin
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        3
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/3.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Better Now
-                                        </h4>
-                                        <p>
-                                            Post Malone
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        4
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/4.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            In My Feelings
-                                        </h4>
-                                        <p>
-                                            Drake
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        5
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/5.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Love Lies
-                                        </h4>
-                                        <p>
-                                            Khalid & Normani
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-lg-6">
-                        <table class="chart-table">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        6
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/6.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Delicate
-                                        </h4>
-                                        <p>
-                                            Taylor Swift
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        7
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/7.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            No Tears Left To Cry
-                                        </h4>
-                                        <p>
-                                            Ariana Grande
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        8
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/8.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Back To You
-                                        </h4>
-                                        <p>
-                                            Selena Gomez
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        9
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/9.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Boo'd Up
-                                        </h4>
-                                        <p>
-                                            Ella Mai
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        10
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/10.jpg"/>
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            The Middle
-                                        </h4>
-                                        <p>
-                                            Zedd, Maren Morris & Grey
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png"/>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="text-center pt-5">
-                    <button class="site-btn">
-                        LOAD MORE
-                    </button>
-                </div>
+                 
             </div>
             <div aria-labelledby="tab-5" class="tab-pane fade" id="tab-5" role="tabpanel">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="show-item">
-                            <img alt="" src="img/shows/2.jpg">
-                                <div class="show-info">
-                                    <span>
-                                        10:00 AM
-                                    </span>
-                                    Breakfast Radio Show
-                                </div>
-                            </img>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="show-item">
-                            <img alt="" src="img/shows/3.jpg">
-                                <div class="show-info">
-                                    <span>
-                                        10:00 AM
-                                    </span>
-                                    Breakfast Radio Show
-                                </div>
-                            </img>
-                        </div>
-                    </div>
-                </div>
+              
             </div>
-            <div aria-labelledby="tab-5" class="tab-pane fade" id="tab-6" role="tabpanel">
-                <div class="row">
-                    <div class="col-lg-4 col-md-9 m-md-auto m-lg-0">
-                        <div class="show-item">
-                            <img alt="" src="img/shows/1.jpg">
-                                <div class="show-info">
-                                    <span>
-                                        10:00 AM
-                                    </span>
-                                    Breakfast Radio Show
-                                </div>
-                            </img>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="show-item">
-                            <img alt="" src="img/shows/2.jpg">
-                                <div class="show-info">
-                                    <span>
-                                        10:00 AM
-                                    </span>
-                                    Breakfast Radio Show
-                                </div>
-                            </img>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="show-item">
-                            <img alt="" src="img/shows/3.jpg">
-                                <div class="show-info">
-                                    <span>
-                                        10:00 AM
-                                    </span>
-                                    Breakfast Radio Show
-                                </div>
-                            </img>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center pt-5">
-                    <button class="site-btn">
-                        LOAD MORE
-                    </button>
-                </div>
-            </div>
-            <div aria-labelledby="tab-7" class="tab-pane fade" id="tab-7" role="tabpanel">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="show-item">
-                            <img alt="" src="img/shows/1.jpg">
-                                <div class="show-info">
-                                    <span>
-                                        10:00 AM
-                                    </span>
-                                    Breakfast Radio Show
-                                </div>
-                            </img>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="show-item">
-                            <img alt="" src="img/shows/2.jpg">
-                                <div class="show-info">
-                                    <span>
-                                        10:00 AM
-                                    </span>
-                                    Breakfast Radio Show
-                                </div>
-                            </img>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="show-item">
-                            <img alt="" src="img/shows/3.jpg">
-                                <div class="show-info">
-                                    <span>
-                                        10:00 AM
-                                    </span>
-                                    Breakfast Radio Show
-                                </div>
-                            </img>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center pt-5">
-                    <button class="site-btn">
-                        LOAD MORE
-                    </button>
-                </div>
-            </div>
+            
         </div>
     </div>
 </section>

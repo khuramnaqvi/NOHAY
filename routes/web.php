@@ -34,14 +34,14 @@ Route::get('/migrate', function() {
 return 'FINISHED';
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::get('/contact', function () {
     return view('contact');
 });
 
+
+Route::get('/',[userController::class,'welcome']);
 
 Route::get('/All_Noha_Khawan',[userController::class,'All_Noha_Khawan']);
 Route::get('/list_nohay/{id?}',[userController::class,'list_nohay']);

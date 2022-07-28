@@ -146,47 +146,28 @@
                                  Noha Khawan's
                             </h4>
                         </div>
+                        @php
+                $classes = App\Models\User::where('role',1)->orderBy('id', 'DESC')->get();
+                    $l=0;
+            @endphp
                         <ul class="order-list">
+                            
+                            @foreach($classes as $row)
+                            @php
+               
+                    $l++;
+            @endphp
                             <li>
                                 <a href="#">
                                     <span>
-                                        1
+                                        {{$l}}
                                     </span>
-                                    88,8 Weekly Chart
+                                    {{$row->name}}
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <span>
-                                        2
-                                    </span>
-                                    Transitions - John Digweed
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>
-                                        3
-                                    </span>
-                                    Who’s On Top? with John Doe
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>
-                                        4
-                                    </span>
-                                    88,8 News
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>
-                                        5
-                                    </span>
-                                    Electronic Worriors
-                                </a>
-                            </li>
+                            @endforeach
+                            
+                            
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-6 ft-widget">

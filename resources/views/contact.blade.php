@@ -11,7 +11,7 @@
 </section>
 <section class="contact-section">
     <div class="container">
-        <div class="location-links">
+        {{-- <div class="location-links">
             <a href="#">
                 Berlin
             </a>
@@ -54,7 +54,7 @@
             </p>
         </div>
         <div class="map" id="map-canvas">
-        </div>
+        </div> --}}
         <div class="section-title text-center">
             <h2>
                 Get in Touch

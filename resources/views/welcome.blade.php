@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
 <section class="hero-section set-bg" data-setbg="img/bg.jpg">
-            <div class="locations d-none d-sm-block">
+            {{-- <div class="locations d-none d-sm-block">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-2 col-sm-4 location">
@@ -48,16 +48,16 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <div class="hero-slider owl-carousel">
                 <div class="hs-item">
                     <div class="container">
                         <span>
                             UP NEXT
                         </span>
-                        <h2>
+                        {{-- <h2>
                             DJ Khaled Exclusive Interview
-                        </h2>
+                        </h2> --}}
                     </div>
                 </div>
                 <div class="hs-item">
@@ -65,9 +65,9 @@
                         <span>
                             UP NEXT
                         </span>
-                        <h2>
+                        {{-- <h2>
                             David Guetta Exclusive Interview
-                        </h2>
+                        </h2> --}}
                     </div>
                 </div>
                 <div class="hs-item">
@@ -75,9 +75,9 @@
                         <span>
                             UP NEXT
                         </span>
-                        <h2>
+                       {{--  <h2>
                             Dj snake Exclusive Track
-                        </h2>
+                        </h2> --}}
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                 </div>
             </div>
         </section>
-        <section class="latest-podcast-section spad">
+        {{-- <section class="latest-podcast-section spad">
             <div class="container">
                 <div class="section-title text-center">
                     <h2>
@@ -140,8 +140,48 @@
                     </div>
                 </div>
             </div>
+        </section> --}}
+        <section class="djs-section">
+    
+            <div class="container">
+                <div class="dj-team pl-5 pr-5">
+                    @foreach($user as $row)
+                    <div class="col-1-5">
+                        <div class="dj-single ">
+                            <div style="height: 224px;">
+                                <img alt="" src="{{asset('upload/images/'.$row->file)}}" style="width: 100%;height: 100%; object-fit: contain;">
+                                
+                            </div>
+                            
+                                <div class="dj-info-warp">
+                                    <a href="{{url('list_nohay/' .$row->id)}}">
+                                    <div class="dj-info">
+                                        <h4>
+                                            {{$row->name}}
+                                        </h4>
+                                        
+                                    </div></a>
+                                    <div class="dj-social-links">
+                                        <a href="{{$row->fburl}}">
+                                            <i class="fa fa-facebook">
+                                            </i>
+                                        </a>
+                                        
+                                        <a href="{{$row->twurl}}">
+                                            <i class="fa fa-twitter">
+                                            </i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </img>
+                        </div>
+                    </div>
+                    @endforeach
+                    
+                </div>
+            </div>
         </section>
-        <section class="charts-section">
+        <section class="charts-section" style="margin-top: 10%;">
             <div class="container">
                 <div class="section-title text-center">
                     <h2>

@@ -6,11 +6,13 @@
     iframe{
         width: 22rem;
         height: 30rem;
-        margin-left: 3%;
-
+       
     }
     .chart-table{
         width: 22rem;
+    }
+    .sec1 ,.sec2{
+        margin:auto;
     }
 }
 
@@ -23,11 +25,13 @@
     iframe{
         width: 40rem;
         height: 30rem;
-            margin-left: unset;
-            padding-right: 3%;
+        padding-right: 3%;
     }
     .chart-table{
         width: 30rem;
+    }
+    .sec1 ,.sec2{
+        margin:unset;
     }
 }    
     
@@ -36,7 +40,7 @@
     <div class="container">
         <div class="section-title text-center">
             <h2>
-                Noha Khawan's
+               {{$list->campanyname->name}}
             </h2>
         </div>
     </div>
@@ -46,78 +50,39 @@
     <div class="container">
        
         <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-7 sec1">
                 <iframe src="https://www.youtube.com/embed/{{$list->url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="col-lg-5">
-                       {{--  <table class="chart-table" style="">
+            <div class="col-lg-5 sec2">
+                        <table class="chart-table" style="">
                             <tbody>
+                            @php $k=0; @endphp   
+                            @foreach($three as $row_three)
+                            @php $k++; @endphp    
                                 <tr>
-                                    <td>
-                                        1
+                                    <td ><a href="{{url('single/' .$row_three->id)}}" style="color: white;">
+                                        {{$k}}</a>
+                                    </td>
+                                    <td><a href="{{url('single/' .$row_three->id)}}" style="color: white;">
+                                        <img alt="#" src="{{asset('upload/images/'.$row_three->campanyname->file)}}" style="border-radius: 50%;"></a>
                                     </td>
                                     <td>
-                                        <img alt="#" src="img/chart/1.jpg">
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Girls Like You
+                                        <h4 style="color: white;"><a href="{{url('single/' .$row_three->id)}}" style="color: white;">
+                                           {{$row_three->tittle}} | {{$row_three->year}}</a>
                                         </h4>
-                                        <p>
-                                            Maroon 5 Featuring Cardi B
-                                        </p>
+                                        
                                     </td>
                                     <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png">
+                                        <a href="{{url('single/' .$row_three->id)}}">
+                                            <img alt="" src="{{asset('img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png')}}"/>
                                         </a>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        2
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/2.jpg">
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            I Like It
-                                        </h4>
-                                        <p>
-                                            Cardi B, Bad Bunny &amp; J Balvin
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png">
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        3
-                                    </td>
-                                    <td>
-                                        <img alt="#" src="img/chart/3.jpg">
-                                    </td>
-                                    <td>
-                                        <h4>
-                                            Better Now
-                                        </h4>
-                                        <p>
-                                            Post Malone
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <img alt="" src="img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png">
-                                        </a>
-                                    </td>
-                                </tr>
+                              @endforeach
+                               
                                
                             </tbody>
-                        </table> --}}
+                        </table>
                         
                         <a href="{{$link}}"  >
                         <button class="site-btn" style="margin-top: 7%;margin-bottom: 7%;float: right;">
