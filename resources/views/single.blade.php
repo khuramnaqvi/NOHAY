@@ -119,7 +119,7 @@
                             </tbody>
                         </table> --}}
                         
-                        <a href="{{$link}}"  download rel="noopener noreferrer" target="_blank">
+                        <a href="{{$link}}"  >
                         <button class="site-btn" style="margin-top: 7%;margin-bottom: 7%;float: right;">
                         Dwonload
                     </button></a>
