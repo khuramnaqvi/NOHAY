@@ -28,10 +28,7 @@
         </div>
         <header class="header-section">
             <div class="header-warp">
-                <a class="site-logo" href="home.html">
-                    <img alt="" src="img/xlogo.png.pagespeed.ic.vSGZnIsSQU.png">
-                    </img>
-                </a>
+                <h3 style="color: #ff0000;margin: auto;"><b>Madh-E-Shabir</b></h3>
                 <div class="nav-switch">
                     <i class="fa fa-bars">
                     </i>
@@ -104,7 +101,7 @@
         <section class="footer-top-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 ft-widget">
+                    <div class="col-lg-4 col-md-6 ft-widget">
                         <div class="ft-title">
                             <h4>
                                 Quick Links
@@ -140,7 +137,7 @@
                             
                         </ul>
                     </div>
-                    <div class="col-lg-3 col-md-6 ft-widget">
+                    <div class="col-lg-4 col-md-6 ft-widget">
                         <div class="ft-title">
                             <h4>
                                  Noha Khawan's
@@ -158,7 +155,7 @@
                     $l++;
             @endphp
                             <li>
-                                <a href="#">
+                                <a href="{{url('list_nohay/' .$row->id)}}">
                                     <span>
                                         {{$l}}
                                     </span>
@@ -170,7 +167,7 @@
                             
                         </ul>
                     </div>
-                    <div class="col-lg-3 col-md-6 ft-widget">
+                    {{-- <div class="col-lg-3 col-md-6 ft-widget">
                         <div class="ft-title">
                             <h4>
                                 Blog
@@ -202,8 +199,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 ft-widget">
+                    </div> --}}
+                    <div class="col-lg-4 col-md-6 ft-widget">
                         <div class="ft-title">
                             <h4>
                                 Contact
@@ -214,13 +211,13 @@
                                 <span>
                                     A:
                                 </span>
-                                4111 Birch Street, Berlin
+                                1234 Lahore, Pakistan
                             </p>
                             <p>
                                 <span>
                                     T:
                                 </span>
-                                317-822-4383
+                                000-111-222
                             </p>
                             <p>
                                 <span>
@@ -230,8 +227,7 @@
                                     [email protected]
                                 </a>
                             </p>
-                            <img alt="" class="footer-logo" src="img/xlogo.png.pagespeed.ic.vSGZnIsSQU.png">
-                            </img>
+                           <h3 style="color: #ff0000;margin: auto;"><b>Madh-E-Shabir</b></h3>
                         </div>
                     </div>
                 </div>
@@ -246,13 +242,13 @@
                     <script>
                         document.write(new Date().getFullYear());
                     </script>
-                   <!--  All rights reserved | This template is made with
+                    All rights reserved 
                     <i aria-hidden="true" class="fa fa-heart-o">
                     </i>
                     by
-                    <a href="https://colorlib.com/" target="_blank">
-                        Colorlib
-                    </a> -->
+                    <a href="{{url('/')}}" target="_blank">
+                        Madh-E-Shabir
+                    </a>
                 </p>
             </div>
         </footer>

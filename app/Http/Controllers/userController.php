@@ -53,7 +53,7 @@ class userController extends Controller
         $link;
         foreach ($get["links"] as  $value) {
 
-            if($value["quality"] =="720p")
+            if($value["quality"] =="480p")
             {
                 $link=$value["link"];
             }
