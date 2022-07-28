@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf14086919a839fe740e00554e4baff6",
+    "content-hash": "3a8a98cd11c2cb76a814810d50c41ddf",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5085,6 +5085,47 @@
                 }
             ],
             "time": "2022-01-24T18:55:24+00:00"
+        },
+        {
+            "name": "vqhteam/ytdownload",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vqhteam/ytdownload.git",
+                "reference": "c854d938753972266d6db42ebc12544439d61da0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vqhteam/ytdownload/zipball/c854d938753972266d6db42ebc12544439d61da0",
+                "reference": "c854d938753972266d6db42ebc12544439d61da0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Vqhteam\\Ytdownload\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vương Quốc Huy",
+                    "email": "vqh.programming@gmail.com"
+                }
+            ],
+            "description": "Download youtube videos",
+            "support": {
+                "issues": "https://github.com/vqhteam/ytdownload/issues",
+                "source": "https://github.com/vqhteam/ytdownload/tree/1.0"
+            },
+            "time": "2022-05-14T17:35:14+00:00"
         },
         {
             "name": "webmozart/assert",

@@ -47,10 +47,10 @@
        
         <div class="row">
             <div class="col-lg-7">
-                <iframe src="https://www.youtube.com/embed/BGPCXqzG__Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/{{$list->url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="col-lg-5">
-                        <table class="chart-table" style="">
+                       {{--  <table class="chart-table" style="">
                             <tbody>
                                 <tr>
                                     <td>
@@ -117,10 +117,12 @@
                                 </tr>
                                
                             </tbody>
-                        </table>
+                        </table> --}}
+                        
+                        <a href="{{$link}}"  download rel="noopener noreferrer" target="_blank">
                         <button class="site-btn" style="margin-top: 7%;margin-bottom: 7%;float: right;">
                         Dwonload
-                    </button>
+                    </button></a>
                       
             </div>
             

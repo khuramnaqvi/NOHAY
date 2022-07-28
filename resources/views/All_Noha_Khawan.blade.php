@@ -19,20 +19,20 @@
     </div>
     <div class="container p-0">
         <div class="dj-team">
+            @foreach($user as $row)
             <div class="col-1-5">
                 <div class="dj-single">
-                    <img alt="" src="img/djs/1.jpg">
+                    <img alt="" src="{{asset('upload/images/'.$row->file)}}">
                         <div class="dj-info-warp">
+                            <a href="{{url('list_nohay/' .$row->id)}}">
                             <div class="dj-info">
                                 <h4>
-                                    Jane Doe
+                                    {{$row->name}}
                                 </h4>
-                                <p>
-                                    Show Title / Position
-                                </p>
-                            </div>
+                                
+                            </div></a>
                             <div class="dj-social-links">
-                                <a href="#">
+                                <a href="{{$row->fburl}}">
                                     <i class="fa fa-facebook">
                                     </i>
                                 </a>
@@ -40,7 +40,7 @@
                                     <i class="fa fa-soundcloud">
                                     </i>
                                 </a>
-                                <a href="#">
+                                <a href="{{$row->twurl}}">
                                     <i class="fa fa-twitter">
                                     </i>
                                 </a>
@@ -49,276 +49,8 @@
                     </img>
                 </div>
             </div>
-            <div class="col-1-5">
-                <div class="dj-single">
-                    <img alt="" src="img/djs/2.jpg">
-                        <div class="dj-info-warp">
-                            <div class="dj-info">
-                                <h4>
-                                    Jane Doe
-                                </h4>
-                                <p>
-                                    Show Title / Position
-                                </p>
-                            </div>
-                            <div class="dj-social-links">
-                                <a href="#">
-                                    <i class="fa fa-facebook">
-                                    </i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-soundcloud">
-                                    </i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter">
-                                    </i>
-                                </a>
-                            </div>
-                        </div>
-                    </img>
-                </div>
-            </div>
-            <div class="col-1-5">
-                <div class="dj-single">
-                    <img alt="" src="img/djs/3.jpg">
-                        <div class="dj-info-warp">
-                            <div class="dj-info">
-                                <h4>
-                                    Jane Doe
-                                </h4>
-                                <p>
-                                    Show Title / Position
-                                </p>
-                            </div>
-                            <div class="dj-social-links">
-                                <a href="#">
-                                    <i class="fa fa-facebook">
-                                    </i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-soundcloud">
-                                    </i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter">
-                                    </i>
-                                </a>
-                            </div>
-                        </div>
-                    </img>
-                </div>
-            </div>
-            <div class="col-1-5">
-                <div class="dj-single">
-                    <img alt="" src="img/djs/4.jpg">
-                        <div class="dj-info-warp">
-                            <div class="dj-info">
-                                <h4>
-                                    Jane Doe
-                                </h4>
-                                <p>
-                                    Show Title / Position
-                                </p>
-                            </div>
-                            <div class="dj-social-links">
-                                <a href="#">
-                                    <i class="fa fa-facebook">
-                                    </i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-soundcloud">
-                                    </i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter">
-                                    </i>
-                                </a>
-                            </div>
-                        </div>
-                    </img>
-                </div>
-            </div>
-            <div class="col-1-5">
-                <div class="dj-single">
-                    <img alt="" src="img/djs/5.jpg">
-                        <div class="dj-info-warp">
-                            <div class="dj-info">
-                                <h4>
-                                    Jane Doe
-                                </h4>
-                                <p>
-                                    Show Title / Position
-                                </p>
-                            </div>
-                            <div class="dj-social-links">
-                                <a href="#">
-                                    <i class="fa fa-facebook">
-                                    </i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-soundcloud">
-                                    </i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter">
-                                    </i>
-                                </a>
-                            </div>
-                        </div>
-                    </img>
-                </div>
-            </div>
-            <div class="col-1-5">
-                <div class="dj-single">
-                    <img alt="" src="img/djs/6.jpg">
-                        <div class="dj-info-warp">
-                            <div class="dj-info">
-                                <h4>
-                                    Jane Doe
-                                </h4>
-                                <p>
-                                    Show Title / Position
-                                </p>
-                            </div>
-                            <div class="dj-social-links">
-                                <a href="#">
-                                    <i class="fa fa-facebook">
-                                    </i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-soundcloud">
-                                    </i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter">
-                                    </i>
-                                </a>
-                            </div>
-                        </div>
-                    </img>
-                </div>
-            </div>
-            <div class="col-1-5">
-                <div class="dj-single">
-                    <img alt="" src="img/djs/7.jpg">
-                        <div class="dj-info-warp">
-                            <div class="dj-info">
-                                <h4>
-                                    Jane Doe
-                                </h4>
-                                <p>
-                                    Show Title / Position
-                                </p>
-                            </div>
-                            <div class="dj-social-links">
-                                <a href="#">
-                                    <i class="fa fa-facebook">
-                                    </i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-soundcloud">
-                                    </i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter">
-                                    </i>
-                                </a>
-                            </div>
-                        </div>
-                    </img>
-                </div>
-            </div>
-            <div class="col-1-5">
-                <div class="dj-single">
-                    <img alt="" src="img/djs/8.jpg">
-                        <div class="dj-info-warp">
-                            <div class="dj-info">
-                                <h4>
-                                    Jane Doe
-                                </h4>
-                                <p>
-                                    Show Title / Position
-                                </p>
-                            </div>
-                            <div class="dj-social-links">
-                                <a href="#">
-                                    <i class="fa fa-facebook">
-                                    </i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-soundcloud">
-                                    </i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter">
-                                    </i>
-                                </a>
-                            </div>
-                        </div>
-                    </img>
-                </div>
-            </div>
-            <div class="col-1-5">
-                <div class="dj-single">
-                    <img alt="" src="img/djs/9.jpg">
-                        <div class="dj-info-warp">
-                            <div class="dj-info">
-                                <h4>
-                                    Jane Doe
-                                </h4>
-                                <p>
-                                    Show Title / Position
-                                </p>
-                            </div>
-                            <div class="dj-social-links">
-                                <a href="#">
-                                    <i class="fa fa-facebook">
-                                    </i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-soundcloud">
-                                    </i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter">
-                                    </i>
-                                </a>
-                            </div>
-                        </div>
-                    </img>
-                </div>
-            </div>
-            <div class="col-1-5">
-                <div class="dj-single">
-                    <img alt="" src="img/djs/10.jpg">
-                        <div class="dj-info-warp">
-                            <div class="dj-info">
-                                <h4>
-                                    Jane Doe
-                                </h4>
-                                <p>
-                                    Show Title / Position
-                                </p>
-                            </div>
-                            <div class="dj-social-links">
-                                <a href="#">
-                                    <i class="fa fa-facebook">
-                                    </i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-soundcloud">
-                                    </i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter">
-                                    </i>
-                                </a>
-                            </div>
-                        </div>
-                    </img>
-                </div>
-            </div>
+            @endforeach
+            
         </div>
     </div>
 </section>

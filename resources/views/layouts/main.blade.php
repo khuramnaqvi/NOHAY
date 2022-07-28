@@ -37,7 +37,7 @@
                     </i>
                 </div>
                 <ul class="main-menu">
-                    <li class="active">
+                    <li class="{{ (request()->is('/')) ? 'active' : '' }}">
                         <a href="{{url('/')}}">
                             Home
                         </a>
@@ -47,12 +47,12 @@
                             About
                         </a>
                     </li>
-                    <li>
-                        <a href="{{url('single')}}">
+                    <li class="{{ (request()->is('/list_nohay')) ? 'active' : '' }}">
+                        <a href="{{url('list_nohay')}}">
                             Nohay
                         </a>
                     </li>
-                    <li>
+                    <li class="{{ (request()->is('/All_Noha_Khawan')) ? 'active' : '' }}">
                         <a href="{{url('All_Noha_Khawan')}}">
                            Noha Khawan's
                         </a>
