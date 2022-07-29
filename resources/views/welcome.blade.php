@@ -1,6 +1,15 @@
 @extends('layouts.main')
 @section('content')
+<style type="text/css">
+    #myVideo {
+ 
+  min-width: 100%; 
+  min-height: 100%;
+}
+</style>
+
 <section class="hero-section set-bg" data-setbg="img/bg.jpg">
+    
             {{-- <div class="locations d-none d-sm-block">
                 <div class="container">
                     <div class="row">
@@ -50,36 +59,10 @@
                 </div>
             </div> --}}
             <div class="hero-slider owl-carousel">
-                <div class="hs-item">
-                    <div class="container">
-                        <span>
-                            UP NEXT
-                        </span>
-                        {{-- <h2>
-                            DJ Khaled Exclusive Interview
-                        </h2> --}}
-                    </div>
-                </div>
-                <div class="hs-item">
-                    <div class="container">
-                        <span>
-                            UP NEXT
-                        </span>
-                        {{-- <h2>
-                            David Guetta Exclusive Interview
-                        </h2> --}}
-                    </div>
-                </div>
-                <div class="hs-item">
-                    <div class="container">
-                        <span>
-                            UP NEXT
-                        </span>
-                       {{--  <h2>
-                            Dj snake Exclusive Track
-                        </h2> --}}
-                    </div>
-                </div>
+                <video autoplay muted loop id="myVideo">
+  <source src="{{asset('img/Mah e Muharram (Chand) - Mir Hasan Mir Nohay 2022 - New Nohay 2022 - Muharram 2022-1444.mp4')}}" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
             </div>
         </section>
         <section class="promotion-section">
@@ -185,16 +168,49 @@
             <div class="container">
                 <div class="section-title text-center">
                     <h2>
-                        Charts
+                        Trending
                     </h2>
                 </div>
-            </div>
-            <div class="charts-warp set-bg" data-setbg="img/chart-bg.jpg">
-                <div class="container">
-                    <img alt="" src="img/logo-big.png">
-                    </img>
+           
+                <div class="row" style="margin-bottom: 3%;">
+                    @php $k=0; @endphp
+                  
+                  
+                    @foreach($top as $row)
+                    @php $k++; @endphp
+                    <div class="col-lg-6">
+                        <table class="chart-table">
+                            <tbody>
+                                
+                                <tr>
+                                    <td ><a href="{{url('single/' .$row->id)}}" style="color: white;">
+                                        {{$k}}</a>
+                                    </td>
+                                    <td><a href="{{url('single/' .$row->id)}}" style="color: white;">
+                                        <img alt="#" src="{{asset('upload/images/'.$row->campanyname->file)}}" style="border-radius: 50%;"></a>
+                                    </td>
+                                    <td>
+                                        <h4 style="color: white;"><a href="{{url('single/' .$row->id)}}" style="color: white;">
+                                           {{$row->tittle}} | {{$row->year}}</a>
+                                        </h4>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="{{url('single/' .$row->id)}}">
+                                            <img alt="" src="{{asset('img/icons/xyoutube.png.pagespeed.ic.0QKjSvoBpT.png')}}"/>
+                                        </a>
+                                    </td>
+                                </tr>
+                              
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    @endforeach
+                   
                 </div>
             </div>
+        
         </section>
         
 @endsection        

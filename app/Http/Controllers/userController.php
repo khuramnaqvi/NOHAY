@@ -14,8 +14,9 @@ class userController extends Controller
     public function welcome()
     {
         $user=User::where('role',1)->paginate(5);
+        $top=nohay::where('year',2022)->get();
 
-        return view('welcome',compact('user'));
+        return view('welcome',compact('user','top'));
     }
     public function All_Noha_Khawan()
     {
