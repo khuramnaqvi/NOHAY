@@ -83,7 +83,7 @@
                                
                             </tbody>
                         </table>
-                        
+                        <a href="{{asset('img/how_to_dwonload.mp4')}}" style="color:#ff0000;" download="">How To Dwonload</a>
                         <a href="{{$link}}"  >
                         <button class="site-btn" style="margin-top: 7%;margin-bottom: 7%;float: right;">
                         Dwonload
