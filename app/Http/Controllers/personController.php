@@ -15,7 +15,7 @@ class personController extends Controller
      */
     public function index()
     {
-        $user=User::where('role',1)->paginate(10);
+        $user=User::where('role',1)->get();
 
         return view('admin/person_index',compact('user'));
     }

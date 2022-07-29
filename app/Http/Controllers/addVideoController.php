@@ -16,7 +16,7 @@ class addVideoController extends Controller
     public function index()
     {
         $user=user::where('role',1)->get();
-        $emp=nohay::paginate(10);
+        $emp=nohay::all();
 
         return view('admin/video_index',compact('user','emp'));
     }
