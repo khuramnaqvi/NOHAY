@@ -7,8 +7,8 @@
            Index
         </title>
         <meta charset="utf-8">
-            <meta content="88.0 radio station template" name="description">
-                <meta content="radio, station, creative, html" name="keywords">
+            <meta content="Madh-E-Shabir" name="description">
+                <meta content="Madh-E-Shabir" name="keywords">
                     <meta content="width=device-width, initial-scale=1.0" name="viewport">
                         <link href="img/favicon.ico" rel="shortcut icon"/>
                         <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
