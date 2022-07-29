@@ -45,6 +45,7 @@ class addVideoController extends Controller
         $user->url=$request->url;
         $user->user_id=$request->user_id;
         $user->tittle=$request->tittle;
+        $user->year=$request->year;
 
         $user->save();
         return back()->with('success', 'Noha Successfully Add');
