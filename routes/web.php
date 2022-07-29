@@ -46,6 +46,7 @@ Route::get('/',[userController::class,'welcome']);
 Route::get('/All_Noha_Khawan',[userController::class,'All_Noha_Khawan']);
 Route::get('/list_nohay/{id?}',[userController::class,'list_nohay']);
 Route::get('/single/{id}',[userController::class,'single']);
+Route::get('/live_stream',[userController::class,'live_stream']);
 
 
 
@@ -69,5 +70,15 @@ Route::prefix('/admins')->middleware(['auth','admin'])->group(function () {
     });
     Route::resource('person',personController::class);
     Route::resource('nohay',addVideoController::class);
+    Route::get('/slider_nohay',[userController::class,'slider_nohay']);
+    Route::post('/slider_save',[userController::class,'slider_save']);
+    Route::get('/live',[userController::class,'live']);
+    Route::post('/live_save',[userController::class,'live_save']);
+    Route::any('live/delete/{id}',[userController::class,'live_delete']);
+
+
+
+
+    
 
 });

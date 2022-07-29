@@ -39,11 +39,11 @@
                             Home
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            About
+                   {{--  <li class="{{ (request()->is('/live_stream')) ? 'active' : '' }}">
+                        <a href="{{url('/live_stream')}}">
+                            Live Stream
                         </a>
-                    </li>
+                    </li> --}}
                     <li class="{{ (request()->is('/list_nohay')) ? 'active' : '' }}">
                         <a href="{{url('list_nohay')}}">
                             Nohay

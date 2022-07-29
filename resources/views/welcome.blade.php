@@ -60,7 +60,7 @@
             </div> --}}
             <div class="hero-slider owl-carousel">
                 <video autoplay muted loop id="myVideo">
-  <source src="{{asset('img/Mah e Muharram (Chand) - Mir Hasan Mir Nohay 2022 - New Nohay 2022 - Muharram 2022-1444.mp4')}}" type="video/mp4">
+  <source src="{{asset('upload/images/' .$video->url)}}" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
             </div>
@@ -69,11 +69,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="promo-box set-bg" data-setbg="{{asset('img/1.jpg')}}">
+                        <a href="{{url('/list_nohay')}}"><div class="promo-box set-bg" data-setbg="{{asset('img/1.jpg')}}">
                             <h2>
                                Nohay
                             </h2>
-                        </div>
+                        </div></a>
                     </div>
                     <div class="col-md-4">
                         <div class="promo-box set-bg" data-setbg="{{asset('img/3.jpg')}}">
@@ -83,11 +83,12 @@
                         </div>
                     </div>
                     <div class="col-md-4">
+                      {{--   <a href="{{url('/live_stream')}}"> --}}
                         <div class="promo-box set-bg" data-setbg="{{asset('img/2.jpg')}}">
                             <h2>
                                 Live Streams
                             </h2>
-                        </div>
+                        </div>{{-- </a> --}}
                     </div>
                     
                 </div>

@@ -112,10 +112,18 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{url('admins/data_table')}}" class="nav-link">
+            <a href="{{url('admins/slider_nohay')}}" class="nav-link">
               <i class="nav-icon fas fa-columns"></i>
               <p>
-                Data Table
+                Slider Noha
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url('admins/live')}}" class="nav-link">
+              <i class="nav-icon fas fa-columns"></i>
+              <p>
+                Live Stream
               </p>
             </a>
           </li>
